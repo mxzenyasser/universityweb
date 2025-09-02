@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #004D99; /* A professional, deep blue */
+    --secondary-color: #A9333A; /* A complementary maroon/red */
+    --text-dark: #333333; /* A soft black for body text */
+    --text-light: #555555; /* A slightly lighter shade for contrast */
+    --background-light: #F8F9FA; /* A light gray for subtle contrast sections */
+}
+
+/* Base Body Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--text-dark);
+    background-color: #FFFFFF; /* Ensure a clean white background */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, .navbar-brand h1 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.display-1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.display-3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.display-6 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Paragraph Text */
+p {
+    line-height: 1.8;
+    color: var(--text-light);
+}
+
+/* Navigation Bar */
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 600;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--secondary-color);
+}
+
+/* Jumbotron/Header Section */
+.jumbotron-fluid {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path/to/your/background-image.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.jumbotron-fluid h1,
+.jumbotron-fluid h2,
+.jumbotron-fluid h3 {
+    color: #FFFFFF !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Main Content Sections */
+.main-content-container {
+    background-color: var(--background-light);
+    padding: 3rem 0;
+}
+
+section {
+    border-radius: 10px;
+    background-color: #FFFFFF !important;
+}
+
+section h1 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 10px;
+}
+
+.text-secondary {
+    color: var(--text-light) !important;
+}
+
+/* Footer */
+.Footer {
+    background: var(--primary-color) !important;
+}
+
+.Footer h1 {
+    color: #FFFFFF !important;
+}
+
+.Footer p {
+    color: rgba(255, 255, 255, 0.7) !important;
+}

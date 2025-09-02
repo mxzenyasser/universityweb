@@ -1,0 +1,44 @@
+/*
+* This custom CSS addresses the layout and styling concerns.
+* It uses Flexbox to place the navigation and content side-by-side
+* and applies a clean, modern style to the section navigator itself.
+*/
+/* This container wraps the navigation and the main content. */
+.main-content-container {
+    display: flex;
+}
+/* This targets the existing section navigator div to add aesthetic styles. */
+.nav-container {
+    background-color: #f8f9fa; /* A light background for contrast */
+    padding: 20px;
+    border-right: 1px solid #e9ecef;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    border-radius: 0 10px 10px 0; /* Rounded corners on the right side */
+}
+/* This styles the list of links inside the navigator. */
+.nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+/* This styles each individual link for a modern, clean look. */
+.nav-list li a {
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    color: #495057;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px; /* Rounded corners for each link item */
+    transition: all 0.3s ease;
+}
+/* This styles the links when you hover over them. */
+.nav-list li a:hover {
+    background-color: #e2e6ea;
+    color: #0056b3;
+}
+/* This makes the main content area fill the remaining space. */
+.main-content {
+    flex-grow: 1;
+    padding: 2rem;
+}
